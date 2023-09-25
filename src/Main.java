@@ -13,22 +13,28 @@ public class Main
     {
       System.out.println("Is it a pet (y/n)?");
       answer = scan.nextLine();
-      if (answer.equals("y")) 
-      {
-           System.out.println("I guess a dog! Click on run to play again.");
-      }
-      else 
-      { 
-        
-         System.out.println("I guess an elephant! Click on run to play again.");   
-      }
-    }      
-    else { // not a mammal
-      
-        System.out.println("I guess a bird! Click on run to play again.");
-    
-    }      
-  
-
+      if (answer.equals("y"))
+      System.out.println("I guess a dog! Click on run to play again.");
+      else{
+      System.out.println("Is it a heavy animal (y/n)?");
+      answer = scan.nextLine();
+      if (answer.equals("y")){
+      System.out.println("I guess an elephant! Click on run to play again.");
+      else{  
+        System.out.println("I guess it is a tiger! Click on run to play again.");
+      }  
+    }
   }
 }
+    else{ // not a mammal
+      System.out.println("Is it vertebrate (y/n)?");
+      answer = scan.nextLine();
+      if (answer.equals("y")){
+        System.out.println("I guess a bird! Click on run to play again.");
+    }
+        else{
+          System.out.println("I guess a Tarantula! Click on run to play again.");
+        }
+      }
+    }
+  }
